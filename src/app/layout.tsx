@@ -23,8 +23,8 @@ const fontBody = Manrope({
 //   variable: '--font-body',
 // })
 export const metadata: Metadata = {
-  title: "Workplace Labs",
-  description: "Workplace Labs is a group of AI experts and technologists that are helping companies to leverage the power of AI to improve their operations and products.",
+  title: "AI For HR Mastermind",
+  description: "AI For HR Mastermind is an introductory program for HR and People leaders to demystify Gen AI, spot use cases aligned with business goals, and turn their teams into the go-to company experts on AI.",
 };
 
 export default function RootLayout({
