@@ -1,0 +1,28 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "pnpm install && pnpm run build",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+      "server": "pnpm run dev"
+    },
+    "customizations": {
+      "codespaces": {
+        "openFiles": ["src/components/home-body.tsx"]
+      },
+      "vscode": {
+        "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+      }
+    },
+    "portsAttributes": {
+      "3000": {
+        "label": "Next.js",
+        "onAutoForward": "openBrowser"
+      }
+    },
+    "forwardPorts": [3000]
+  }
+  
