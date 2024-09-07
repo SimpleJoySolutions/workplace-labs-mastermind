@@ -23,8 +23,28 @@ const fontBody = Manrope({
 //   variable: '--font-body',
 // })
 export const metadata: Metadata = {
-  title: "AI For HR Mastermind",
-  description: "AI For HR Mastermind is an introductory program for HR and People leaders to demystify Gen AI, spot use cases aligned with business goals, and turn their teams into the go-to company experts on AI.",
+  title: 'AI For HR Mastermind',
+  description: 'Join our 4-week mastermind program to demystify Gen AI, spot HR use cases, and become your company\'s go-to AI expert. Transform your HR practices with AI.',
+  openGraph: {
+    title: 'AI For HR Mastermind',
+    description: 'Become an AI-empowered HR leader in 4 weeks. Join our exclusive mastermind program.',
+    images: [
+      {
+        url: '/images/man-working.png', // Replace with your actual image path
+        width: 1200,
+        height: 630,
+        alt: 'AI For HR Mastermind',
+      },
+    ],
+    type: 'website',
+    url: 'https://www.aiforhrmastermind.com', // Replace with your actual URL
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI For HR Mastermind',
+    description: 'Transform your HR practices with AI. Join our 4-week mastermind program.',
+    images: ['/images/man-working.png'], // Replace with your actual image path
+  },
 };
 
 export default function RootLayout({
