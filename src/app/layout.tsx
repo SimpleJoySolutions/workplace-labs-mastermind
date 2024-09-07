@@ -30,20 +30,20 @@ export const metadata: Metadata = {
     description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
     images: [
       {
-        url: 'https://www.aiforhrmastermind.com/images/man-working.png', // Updated to use absolute URL
+        url: 'https://www.aiforhrmastermind.com/images/man-working.png',
         width: 1200,
         height: 630,
         alt: 'AI For HR Mastermind',
       },
     ],
     type: 'website',
-    url: 'https://www.aiforhrmastermind.com', // Replace with your actual URL
+    url: 'https://www.aiforhrmastermind.com',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI For HR Mastermind',
     description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
-    images: ['https://www.aiforhrmastermind.com/images/man-working.png'], // Updated to use absolute URL
+    images: ['https://www.aiforhrmastermind.com/images/man-working.png'],
   },
 };
 
