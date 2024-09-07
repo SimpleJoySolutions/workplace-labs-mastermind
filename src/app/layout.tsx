@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   description: 'Join our 4-week mastermind program to demystify Gen AI, spot HR use cases, and become your company\'s go-to AI expert. Transform your HR practices with AI.',
   openGraph: {
     title: 'AI For HR Mastermind',
-    description: 'Become an AI-empowered HR leader in 4 weeks. Join our exclusive mastermind program.',
+    description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
     images: [
       {
-        url: '/images/man-working.png', // Replace with your actual image path
+        url: 'https://www.aiforhrmastermind.com/images/man-working.png', // Updated to use absolute URL
         width: 1200,
         height: 630,
         alt: 'AI For HR Mastermind',
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AI For HR Mastermind',
-    description: 'Transform your HR practices with AI. Join our 4-week mastermind program.',
-    images: ['/images/man-working.png'], // Replace with your actual image path
+    description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
+    images: ['https://www.aiforhrmastermind.com/images/man-working.png'], // Updated to use absolute URL
   },
 };
 
