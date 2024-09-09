@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
     images: [
       {
-        url: 'https://www.aiforhrmastermind.com/images/man-working.png',
+        url: 'https://www.aiforhrmastermind.com/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'AI For HR Mastermind',
@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     ],
     type: 'website',
     url: 'https://www.aiforhrmastermind.com',
+    siteName: 'AI For HR Mastermind',
   },
   twitter: {
     card: 'summary_large_image',
