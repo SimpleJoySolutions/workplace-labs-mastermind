@@ -52,7 +52,7 @@ const FAQPage = () => {
       answer: (
         <>
           <p>The AI for HR Mastermind includes:</p>
-          <ul>
+          <ul className="list-disc list-inside space-y-2 mt-2">
             <li>Weekly interactive and hands-on group training sessions</li>
             <li>Resources curated specifically for HR leaders</li>
             <li>Reusable templates and frameworks for AI implementation</li>
