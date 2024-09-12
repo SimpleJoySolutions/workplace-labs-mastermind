@@ -12,6 +12,7 @@ export const Header = () => {
         <Link href="/" className="text-md font-medium hover:underline underline-offset-4" prefetch={false}>
           Home
         </Link>
+        <Link href="/faq" className="text-md font-medium hover:underline underline-offset-4" prefetch={false}>FAQ</Link>
         <Link href="/about-us" className="text-md font-medium hover:underline underline-offset-4" prefetch={false}>
           About Us
         </Link>
