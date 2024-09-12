@@ -9,7 +9,7 @@ import {
 const FAQPage = () => {
   const faqItems = [
     {
-      question: 'Who is The Essential AI for HR Mastermind for?',
+      question: 'Who is The AI for HR Mastermind for?',
       answer: (
         <>
           <p>This mastermind is for HR and People leaders who want to demystify Gen AI, spot use cases aligned with business goals, and turn their teams into the go-to company experts on AI. It's ideal for:</p>
@@ -21,7 +21,7 @@ const FAQPage = () => {
             <li>Professionals interested in implementing evidence-based talent practices using AI</li>
             <li>HR leaders ready for a hybrid digital and in-person experience for optimal learning and engagement</li>
           </ul>
-          <p className="mt-2"><strong>Curious if The Essential AI for HR Mastermind is for you? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Apply and we will let you know!</a></strong></p>
+          <p className="mt-2"><strong>Curious if The AI for HR Mastermind is for you? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Apply and we will let you know!</a></strong></p>
         </>
       ),
     },
@@ -51,7 +51,7 @@ const FAQPage = () => {
       question: 'What is included in the program?',
       answer: (
         <>
-          <p>The Essential AI for HR Mastermind includes:</p>
+          <p>The AI for HR Mastermind includes:</p>
           <ul>
             <li>Weekly interactive and hands-on group training sessions</li>
             <li>Resources curated specifically for HR leaders</li>
@@ -63,22 +63,22 @@ const FAQPage = () => {
         </>
       ),
     },
-    {
-      question: 'I\'ve applied, now what?',
-      answer: (
-        <>
-          <p>Congratulations on taking this exciting first step! Here's what to expect next:</p>
-          <ol>
-            <li>We'll review your application and, if approved, you'll receive an email to schedule a brief onboarding call.</li>
-            <li>You'll gain access to the exclusive members-only community page.</li>
-            <li>Introduce yourself to your fellow HR leaders in the community.</li>
-            <li>Participate in the welcome call to meet your coaches and peers.</li>
-            <li>Prepare for the first week's session on AI Readiness.</li>
-            <li>Look out for weekly emails with session details and any pre-work or resources.</li>
-          </ol>
-        </>
-      ),
-    },
+    // {
+    //   question: 'I\'ve applied, now what?',
+    //   answer: (
+    //     <>
+    //       <p>Congratulations on taking this exciting first step! Here's what to expect next:</p>
+    //       <ol>
+    //         <li>We'll review your application and, if approved, you'll receive an email to schedule a brief onboarding call.</li>
+    //         <li>You'll gain access to the exclusive members-only Slack community.</li>
+    //         <li>Introduce yourself to your fellow HR leaders in the community.</li>
+    //         <li>Participate in the welcome call to meet your coaches and peers.</li>
+    //         <li>Prepare for the first week's session on AI Readiness.</li>
+    //         <li>Look out for weekly emails with session details and any pre-work or resources.</li>
+    //       </ol>
+    //     </>
+    //   ),
+    // },
     {
       question: 'How can this mastermind benefit my organization?',
       answer: 'This mastermind will empower you to lead AI initiatives in your HR department, potentially reducing costs, improving efficiency, and enhancing decision-making. You\'ll learn to identify valuable AI use cases, build prototypes, and create action plans for implementation. This knowledge can position your HR team as strategic partners in your organization\'s AI transformation.',
@@ -94,7 +94,7 @@ const FAQPage = () => {
               Frequently Asked Questions
             </h1>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center mx-auto mb-8">
-              Find answers to common questions about The Essential AI for HR Mastermind
+              Find answers to common questions about The AI for HR Mastermind
             </p>
             <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
               {faqItems.map((item, index) => (
