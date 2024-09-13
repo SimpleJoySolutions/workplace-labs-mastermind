@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import { Manrope, Taviraj } from 'next/font/google'
+import type { Metadata } from 'next'
+import { Manrope } from 'next/font/google'
 import { cn } from '@/lib/utils'
-import "./globals.css";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import './globals.css'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+import Script from 'next/script'
 
 const fontHeading = Manrope({
   subsets: ['latin'],
@@ -17,11 +18,7 @@ const fontBody = Manrope({
   variable: '--font-body',
   weight: '400',
 })
-// const fontBody = Manrope({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-body',
-// })
+
 export const metadata: Metadata = {
   title: 'AI For HR Mastermind',
   description: 'Join our 4-week mastermind program to demystify Gen AI, spot HR use cases, and become your company\'s go-to AI expert. Transform your HR practices with AI.',
@@ -55,6 +52,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-DHSXQX35HP`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DHSXQX35HP');
+            `,
+          }}
+        />
+      </head>
       <body 
         className={cn(
           'antialiased',

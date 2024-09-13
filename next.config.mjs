@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
+import { withContentlayer } from 'next-contentlayer'
+
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  // Add any other Next.js configuration options here
-};
+  // Remove experimental options
+}
 
-export default nextConfig;
+export default withContentlayer(nextConfig)
