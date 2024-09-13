@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Manrope, Taviraj } from 'next/font/google'
-import { cn } from '@/lib/utils'
+import { Manrope } from 'next/font/google';
+import { cn } from '@/lib/utils';
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const fontHeading = Manrope({
   subsets: ['latin'],
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-C5D3VCT6XR" />
       </body>
     </html>
   );
