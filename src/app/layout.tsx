@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: 'Join our 4-week mastermind program to demystify Gen AI, spot HR use cases, and become your company\'s go-to AI expert. Transform your HR practices with AI.',
   openGraph: {
     title: 'AI For HR Mastermind',
-    description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
+    description: 'Workplace Labs: AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
     images: [
       {
         url: 'https://www.aiforhrmastermind.com/images/og-image.png',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AI For HR Mastermind',
-    description: 'The Essential AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
-    images: ['https://www.aiforhrmastermind.com/images/man-working.png'],
+    description: 'WorkplaceLabs: AI for HR Mastermind: From Concept to Action Plan in 4 Weeks',
+    images: ['https://www.aiforhrmastermind.com/images/og-image.png'],
   },
 };
 
