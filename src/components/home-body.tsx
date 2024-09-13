@@ -23,17 +23,29 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+'use client'
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 export const HomeBody = () => {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="w-full py-12 md:py-24 lg:py-32"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="flex flex-col justify-center space-y-4"
+              >
                 <div className="space-y-2">
                   <h4 className="text-5xl font-bold py-6">
                     The Essential AI for HR Mastermind: From Concept to Action
@@ -45,7 +57,12 @@ export const HomeBody = () => {
                     use cases aligned with business goals, and turn their teams
                     into the go-to company experts on AI.
                   </p>
-                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="flex flex-col gap-2 min-[400px]:flex-row"
+                  >
                     <Link
                       href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
                       className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -53,20 +70,31 @@ export const HomeBody = () => {
                     >
                       Join the Mastermind
                     </Link>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
-              <Image
-                src="/images/man-working.png"
-                width="550"
-                height="550"
-                alt="Hero"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-              />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <Image
+                  src="/images/man-working.png"
+                  width="550"
+                  height="550"
+                  alt="Hero"
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+                />
+              </motion.div>
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -74,7 +102,7 @@ export const HomeBody = () => {
                   Key Benefits
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  By the end of the 4-week mastermind, we’ll help you:
+                  By the end of the 4-week mastermind, we'll help you:
                 </p>
               </div>
             </div>
@@ -123,8 +151,13 @@ export const HomeBody = () => {
               />
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
               <div className="w-full md:w-1/2">
@@ -143,8 +176,8 @@ export const HomeBody = () => {
                 <ul className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-left space-y-4">
                   <li>
                     <h3 className="text-xl font-bold">
-                      Come with employees saying, &quot;I am afraid for my
-                      job.&quot;
+                      Come with employees saying, "I am afraid for my
+                      job."
                     </h3>
                     <p>
                       (We help you address the cultural element of a successful
@@ -174,16 +207,21 @@ export const HomeBody = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Become your company&apos;s go-to leader on AI
+                  Become your company's go-to leader on AI
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Inside the AI in HR Mastermind, you&apos;ll get resources
+                  Inside the AI in HR Mastermind, you'll get resources
                   curated for HR leaders, interactive and hands-on group
                   training sessions, reusable templates and frameworks, and
                   networking opportunities with like-minded HR and People
@@ -210,8 +248,13 @@ export const HomeBody = () => {
               />
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -249,7 +292,7 @@ export const HomeBody = () => {
                   use cases
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Assess your organization&apos;s AI readiness and identify
+                  Assess your organization's AI readiness and identify
                   focus areas for long-term success.
                 </p>
               </div>
@@ -334,9 +377,14 @@ export const HomeBody = () => {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -350,8 +398,8 @@ export const HomeBody = () => {
                     </h3>
                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                       Are you looking for ways to get started with AI? Or maybe
-                      you&apos;re experimenting with AI tools and need better
-                      ways to test your progress and get buy-in? If you&apos;re
+                      you're experimenting with AI tools and need better
+                      ways to test your progress and get buy-in? If you're
                       starting or upskilling in AI, this mastermind group is for
                       you.
                     </p>
@@ -362,8 +410,8 @@ export const HomeBody = () => {
                     </h3>
                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                       Want to learn from what others are doing? Are you looking
-                      for benchmarks and feedback on what you’ve tried so far?
-                      You’ll have an opportunity to network and trade notes with
+                      for benchmarks and feedback on what you've tried so far?
+                      You'll have an opportunity to network and trade notes with
                       other amazing HR leaders who are passionate about AI.
                     </p>
                   </div>
@@ -371,8 +419,13 @@ export const HomeBody = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary text-primary-foreground">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32 bg-accent text-primary-foreground"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -385,16 +438,26 @@ export const HomeBody = () => {
               </p>
             </div>
           </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full py-12 md:py-24 lg:py-32"
+        >
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Apply to Join the Essential AI for HR Mastermind
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  If you&#39;re ready to become an AI-empowered HR leader and
+                  If you're ready to become an AI-empowered HR leader and
                   the go-to company expert, we would love to have you.
                 </p>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -402,7 +465,12 @@ export const HomeBody = () => {
                   make sure the program would be a good fit for you and share
                   news as it happens!
                 </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="flex flex-col gap-2 min-[400px]:flex-row"
+                >
                   <Link
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -410,11 +478,11 @@ export const HomeBody = () => {
                   >
                     Apply Now
                   </Link>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </section>
+        </motion.section>
       </main>
     </div>
   );

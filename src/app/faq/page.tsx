@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   Accordion,
@@ -5,6 +7,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from '@/components/ui/accordion';
+import { motion } from 'framer-motion';
 
 const FAQPage = () => {
   const faqItems = [
@@ -90,28 +93,50 @@ const FAQPage = () => {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-muted">
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-center">
+            <motion.h1 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-center"
+            >
               Frequently Asked Questions
-            </h1>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center mx-auto mb-8">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center mx-auto mb-8"
+            >
               Find answers to common questions about The AI for HR Mastermind
-            </p>
+            </motion.p>
             <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
               {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index + 1}`} className="border-b border-muted">
-                  <AccordionTrigger className="text-xl font-semibold py-4 hover:text-primary transition-colors">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    <div className="text-base space-y-2">
-                      {typeof item.answer === 'string' ? (
-                        <p>{item.answer}</p>
-                      ) : (
-                        item.answer
-                      )}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <AccordionItem value={`item-${index + 1}`} className="border-b border-muted">
+                    <AccordionTrigger className="text-xl font-semibold py-4 hover:text-primary transition-colors">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-4">
+                      <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.3 }}
+                        className="text-base space-y-2"
+                      >
+                        {typeof item.answer === 'string' ? (
+                          <p>{item.answer}</p>
+                        ) : (
+                          item.answer
+                        )}
+                      </motion.div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
               ))}
             </Accordion>
           </div>
