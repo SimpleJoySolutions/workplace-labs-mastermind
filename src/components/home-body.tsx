@@ -222,7 +222,7 @@ export const HomeBody = () => {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Become your company's go-to leader on AI
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="section-paragraph">
                   Inside the AI in HR Mastermind, you'll get resources
                   curated for HR leaders, interactive and hands-on group
                   training sessions, reusable templates and frameworks, and
@@ -398,7 +398,7 @@ export const HomeBody = () => {
                     <h3 className="text-xl font-bold">
                       Leaders who want to start or streamline their AI journey
                     </h3>
-                    <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    <p className="section-paragraph">
                       Are you looking for ways to get started with AI? Or maybe
                       you're experimenting with AI tools and need better
                       ways to test your progress and get buy-in? If you're
@@ -410,7 +410,7 @@ export const HomeBody = () => {
                     <h3 className="text-xl font-bold">
                       Leaders who want to network with other early adopters
                     </h3>
-                    <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    <p className="section-paragraph">
                       Want to learn from what others are doing? Are you looking
                       for benchmarks and feedback on what you've tried so far?
                       You'll have an opportunity to network and trade notes with
@@ -458,11 +458,11 @@ export const HomeBody = () => {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Apply to Join the Essential AI for HR Mastermind
                 </h2>
-                <p className=" text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="section-paragraph">
                   If you're ready to become an AI-empowered HR leader and
                   the go-to company expert, we would love to have you.
                 </p>
-                <p className=" text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="section-paragraph">
                   Click the link below to fill out an application—we want to
                   make sure the program would be a good fit for you and share
                   news as it happens!
