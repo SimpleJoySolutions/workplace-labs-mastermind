@@ -36,9 +36,9 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="w-full py-12 md:py-24 lg:py-32"
+          className="container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
@@ -46,10 +46,12 @@ export const HomeBody = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex flex-col justify-center space-y-4"
               >
-                <div className="space-y-2">
+                <div className="">
                   <h4 className="text-5xl font-bold py-6">
-                    The Essential AI for HR Mastermind: From Concept to Action
-                    Plan in 4 Weeks
+                    The Essential AI for HR Mastermind
+                  </h4>
+                  <h4 className="text-3xl font-bold">
+                    From Concept to Action Plan in 4 Weeks
                   </h4>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl py-4">
                     Our invite-only, 4-week mastermind training program and
@@ -65,7 +67,7 @@ export const HomeBody = () => {
                   >
                     <Link
                       href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
-                      className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="mt-6 inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       Join the Mastermind
@@ -93,12 +95,12 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+          className="bg-muted container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <div className="space-y-2 mb-14">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Key Benefits
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -106,7 +108,7 @@ export const HomeBody = () => {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
                   <li>
@@ -156,9 +158,9 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32"
+          className="container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
               <div className="w-full md:w-1/2">
                 <Image
@@ -170,7 +172,7 @@ export const HomeBody = () => {
                 />
               </div>
               <div className="w-full md:w-1/2 space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center md:text-left">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center md:text-left mb-6">
                   Most AI transformations...
                 </h2>
                 <ul className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-left space-y-4">
@@ -212,15 +214,15 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+          className="bg-muted container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Become your company's go-to leader on AI
                 </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Inside the AI in HR Mastermind, you'll get resources
                   curated for HR leaders, interactive and hands-on group
                   training sessions, reusable templates and frameworks, and
@@ -229,11 +231,11 @@ export const HomeBody = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-36 mt-14">
               <Image
                 src="/images/woman-looking.png"
                 alt="AI in HR Mastermind"
-                className="rounded-lg"
+                className="rounded-lg w-full"
                 width={400}
                 height={300}
                 style={{ aspectRatio: "400/300", objectFit: "cover" }}
@@ -241,7 +243,7 @@ export const HomeBody = () => {
               <Image
                 src="/images/desk-with-computer.png"
                 alt="HR Leaders Collaboration"
-                className="rounded-lg"
+                className="rounded-lg w-full"
                 width={400}
                 height={300}
                 style={{ aspectRatio: "400/300", objectFit: "cover" }}
@@ -253,12 +255,12 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32"
+          className="container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   4-Week AI for HR Mastermind Program
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed">
@@ -267,7 +269,7 @@ export const HomeBody = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -276,9 +278,9 @@ export const HomeBody = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="w-16 h-16 mb-6"
                 >
                   <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
@@ -304,9 +306,9 @@ export const HomeBody = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="w-16 h-16 mb-6"
                 >
                   <path d="m22 2-7 20-4-9-9-4Z" />
@@ -331,9 +333,9 @@ export const HomeBody = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="w-16 h-16 mb-6"
                 >
                   <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
@@ -356,9 +358,9 @@ export const HomeBody = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="w-16 h-16 mb-6"
                 >
                   <path d="M5 22h14" />
@@ -383,12 +385,12 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
+          className="bg-muted container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Who should join the AI for HR mastermind?
                 </h2>
                 <div className="flex flex-col gap-4">
@@ -424,14 +426,14 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32 bg-accent text-primary-foreground"
+          className="bg-accent text-primary-foreground container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
                 Our Mission
               </h2>
-              <p className="max-w-[900px] text-xl md:text-2xl">
+              <p className=" text-xl md:text-2xl">
                 To cut through the noise and teach AI skills that help HR
                 leaders create more engaged, equitable, and evidence-based
                 workplaces.
@@ -443,9 +445,9 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full py-12 md:py-24 lg:py-32"
+          className="container-class"
         >
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="section-inner">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -453,14 +455,14 @@ export const HomeBody = () => {
               className="flex flex-col items-center justify-center space-y-4 text-center"
             >
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
                   Apply to Join the Essential AI for HR Mastermind
                 </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className=" text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   If you're ready to become an AI-empowered HR leader and
                   the go-to company expert, we would love to have you.
                 </p>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className=" text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Click the link below to fill out an application—we want to
                   make sure the program would be a good fit for you and share
                   news as it happens!
@@ -469,11 +471,11 @@ export const HomeBody = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
-                  className="flex flex-col gap-2 min-[400px]:flex-row"
+                  className="flex justify-center"
                 >
                   <Link
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    className="mt-6 inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     Apply Now

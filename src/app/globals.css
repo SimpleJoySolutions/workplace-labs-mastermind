@@ -46,4 +46,11 @@
   .font-heading {
     font-family: var(--font-heading);
   }
+
+  .container-class {
+    @apply w-full py-12 md:py-24 lg:py-32;
+  }
+  .section-inner{
+    @apply container mx-auto max-w-6xl px-4 md:px-6;
+  }
 }
