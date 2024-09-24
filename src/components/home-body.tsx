@@ -261,10 +261,10 @@ export const HomeBody = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  4-Week AI for HR Mastermind Program
+                  AI for HR Mastermind
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed">
-                  Unlock the power of AI in HR through our comprehensive 4-week
+                  our comprehensive 4-week
                   program
                 </p>
               </div>
@@ -433,7 +433,7 @@ export const HomeBody = () => {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
                 Our Mission
               </h2>
-              <p className=" text-xl md:text-2xl">
+              <p className="max-w-[900px] text-xl md:text-2xl">
                 To cut through the noise and teach AI skills that help HR
                 leaders create more engaged, equitable, and evidence-based
                 workplaces.
@@ -456,16 +456,14 @@ export const HomeBody = () => {
             >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Apply to Join the Essential AI for HR Mastermind
+                  Apply to Join The AI for HR Mastermind
                 </h2>
                 <p className="section-paragraph">
-                  If you're ready to become an AI-empowered HR leader and
-                  the go-to company expert, we would love to have you.
+                  Ready to become an AI-empowered HR leader and
+                  the go-to company expert?
                 </p>
                 <p className="section-paragraph">
-                  Click the link below to fill out an application—we want to
-                  make sure the program would be a good fit for you and share
-                  news as it happens!
+                  Each cohort has limited space, so apply now!
                 </p>
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
