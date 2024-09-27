@@ -27,6 +27,7 @@ To read more about using these font, please visit the Next.js documentation:
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from 'framer-motion';
+import { PublicationLogosComponent } from './publication-logos';
 
 export const HomeBody = () => {
   return (
@@ -36,7 +37,7 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="container-class"
+          className="container-class pb-0"
         >
           <div className="section-inner">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -89,6 +90,7 @@ export const HomeBody = () => {
                 />
               </motion.div>
             </div>
+        <PublicationLogosComponent />
           </div>
         </motion.section>
         <motion.section 
