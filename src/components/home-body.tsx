@@ -103,37 +103,38 @@ export const HomeBody = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Who should join the AI for HR mastermind?
+                  Become your company's go-to leader on AI
                 </h2>
-                <div className="flex flex-col gap-4">
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Leaders who want to start or streamline their AI journey
-                    </h3>
-                    <p className="section-paragraph">
-                      Are you looking for ways to get started with AI? Or maybe
-                      you're experimenting with AI tools and need better
-                      ways to test your progress and get buy-in? If you're
-                      starting or upskilling in AI, this mastermind group is for
-                      you.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Leaders who want to network with other early adopters
-                    </h3>
-                    <p className="section-paragraph">
-                      Want to learn from what others are doing? Are you looking
-                      for benchmarks and feedback on what you've tried so far?
-                      You'll have an opportunity to network and trade notes with
-                      other amazing HR leaders who are passionate about AI.
-                    </p>
-                  </div>
-                </div>
+                <p className="section-paragraph">
+                  Inside the AI in HR Mastermind, you'll get resources
+                  curated for HR leaders, interactive and hands-on group
+                  training sessions, reusable templates and frameworks, and
+                  networking opportunities with like-minded HR and People
+                  leaders from some of the best companies.
+                </p>
               </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-36 mt-14">
+              <Image
+                src="/images/woman-looking.png"
+                alt="AI in HR Mastermind"
+                className="rounded-lg w-full"
+                width={400}
+                height={300}
+                style={{ aspectRatio: "400/300", objectFit: "cover" }}
+              />
+              <Image
+                src="/images/desk-with-computer.png"
+                alt="HR Leaders Collaboration"
+                className="rounded-lg w-full"
+                width={400}
+                height={300}
+                style={{ aspectRatio: "400/300", objectFit: "cover" }}
+              />
             </div>
           </div>
         </motion.section>
+       
         
         <motion.section 
           initial={{ opacity: 0 }}
@@ -191,7 +192,6 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-        
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -202,37 +202,38 @@ export const HomeBody = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Become your company's go-to leader on AI
+                  Who should join the AI for HR mastermind?
                 </h2>
-                <p className="section-paragraph">
-                  Inside the AI in HR Mastermind, you'll get resources
-                  curated for HR leaders, interactive and hands-on group
-                  training sessions, reusable templates and frameworks, and
-                  networking opportunities with like-minded HR and People
-                  leaders from some of the best companies.
-                </p>
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold">
+                      Leaders who want to start or streamline their AI journey
+                    </h3>
+                    <p className="section-paragraph">
+                      Are you looking for ways to get started with AI? Or maybe
+                      you're experimenting with AI tools and need better
+                      ways to test your progress and get buy-in? If you're
+                      starting or upskilling in AI, this mastermind group is for
+                      you.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">
+                      Leaders who want to network with other early adopters
+                    </h3>
+                    <p className="section-paragraph">
+                      Want to learn from what others are doing? Are you looking
+                      for benchmarks and feedback on what you've tried so far?
+                      You'll have an opportunity to network and trade notes with
+                      other amazing HR leaders who are passionate about AI.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-36 mt-14">
-              <Image
-                src="/images/woman-looking.png"
-                alt="AI in HR Mastermind"
-                className="rounded-lg w-full"
-                width={400}
-                height={300}
-                style={{ aspectRatio: "400/300", objectFit: "cover" }}
-              />
-              <Image
-                src="/images/desk-with-computer.png"
-                alt="HR Leaders Collaboration"
-                className="rounded-lg w-full"
-                width={400}
-                height={300}
-                style={{ aspectRatio: "400/300", objectFit: "cover" }}
-              />
             </div>
           </div>
         </motion.section>
+       
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
