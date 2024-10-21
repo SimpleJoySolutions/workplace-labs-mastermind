@@ -101,61 +101,40 @@ export const HomeBody = () => {
         >
           <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2 mb-14">
+              <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Key Benefits
+                  Who should join the AI for HR mastermind?
                 </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  By the end of the 4-week mastermind, we'll help you:
-                </p>
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold">
+                      Leaders who want to start or streamline their AI journey
+                    </h3>
+                    <p className="section-paragraph">
+                      Are you looking for ways to get started with AI? Or maybe
+                      you're experimenting with AI tools and need better
+                      ways to test your progress and get buy-in? If you're
+                      starting or upskilling in AI, this mastermind group is for
+                      you.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">
+                      Leaders who want to network with other early adopters
+                    </h3>
+                    <p className="section-paragraph">
+                      Want to learn from what others are doing? Are you looking
+                      for benchmarks and feedback on what you've tried so far?
+                      You'll have an opportunity to network and trade notes with
+                      other amazing HR leaders who are passionate about AI.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <ul className="grid gap-6">
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">
-                        Focus on Strategic Work
-                      </h3>
-                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Automate repetitive HR tasks and free up your team to
-                        focus on high-impact strategic initiatives.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">
-                        Identify Valuable Use Cases
-                      </h3>
-                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Discover how AI can streamline your HR processes, from
-                        talent acquisition to employee engagement.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Upskill Your Team</h3>
-                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Learn in-demand AI skills and empower your HR team to
-                        become leaders in the field.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <Image
-                src="/images/whiteboarding.png"
-                width="550"
-                height="310"
-                alt="Image"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
             </div>
           </div>
         </motion.section>
+        
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -212,6 +191,7 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
+        
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -382,7 +362,6 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -391,39 +370,62 @@ export const HomeBody = () => {
         >
           <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-2 mb-14">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Who should join the AI for HR mastermind?
+                  Key Benefits
                 </h2>
-                <div className="flex flex-col gap-4">
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Leaders who want to start or streamline their AI journey
-                    </h3>
-                    <p className="section-paragraph">
-                      Are you looking for ways to get started with AI? Or maybe
-                      you're experimenting with AI tools and need better
-                      ways to test your progress and get buy-in? If you're
-                      starting or upskilling in AI, this mastermind group is for
-                      you.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Leaders who want to network with other early adopters
-                    </h3>
-                    <p className="section-paragraph">
-                      Want to learn from what others are doing? Are you looking
-                      for benchmarks and feedback on what you've tried so far?
-                      You'll have an opportunity to network and trade notes with
-                      other amazing HR leaders who are passionate about AI.
-                    </p>
-                  </div>
-                </div>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  By the end of the 4-week mastermind, we'll help you:
+                </p>
               </div>
+            </div>
+            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+              <div className="flex flex-col justify-center space-y-4">
+                <ul className="grid gap-6">
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold">
+                        Focus on Strategic Work
+                      </h3>
+                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Automate repetitive HR tasks and free up your team to
+                        focus on high-impact strategic initiatives.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold">
+                        Identify Valuable Use Cases
+                      </h3>
+                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Discover how AI can streamline your HR processes, from
+                        talent acquisition to employee engagement.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold">Upskill Your Team</h3>
+                      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Learn in-demand AI skills and empower your HR team to
+                        become leaders in the field.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <Image
+                src="/images/whiteboarding.png"
+                width="550"
+                height="310"
+                alt="Image"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
             </div>
           </div>
         </motion.section>
+        
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
