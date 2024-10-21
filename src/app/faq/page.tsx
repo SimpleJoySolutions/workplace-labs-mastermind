@@ -118,7 +118,7 @@ const FAQPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <AccordionItem value={`item-${index + 1}`} className="border-b border-muted">
-                    <AccordionTrigger className="text-xl font-semibold py-4 hover:text-primary transition-colors">
+                    <AccordionTrigger className="text-2xl font-semibold py-4 hover:text-primary transition-colors">
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground pb-4">
@@ -126,7 +126,7 @@ const FAQPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
-                        className="text-base space-y-2"
+                        className="text-[17px] space-y-2"
                       >
                         {typeof item.answer === 'string' ? (
                           <p>{item.answer}</p>
