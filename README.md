@@ -38,3 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Links to ChatGPT
 https://chatgpt.com/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
 https://claude.ai/new/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
+
+Theme v2: https://v0.dev/themes/a7Hcx6prc8V
+Theme v3: https://v0.dev/themes/Kq598nFExXr
