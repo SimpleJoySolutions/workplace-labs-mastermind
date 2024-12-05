@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export const AlumniCompaniesSection = () => {
   const companies = [
-    { name: 'Google', logo: '/images/logo_google.svg', url: 'https://google.com' },
-    { name: 'Duracell', logo: '/images/logo_duracell.png', url: 'https://duracell.com' },
-    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.jpg', url: 'https://toyotaconnected.com' },
-    { name: 'Eaglestone Inc', logo: '/images/logo_eaglestone.webp', url: 'https://eaglestoneinc.com' },
-    { name: 'Waymo', logo: '/images/logo_waymo.png', url: 'https://waymo.com' },
+    { name: 'Google', logo: '/images/logo_google.svg', url: 'https://google.com', alt: 'Google company logo' },
+    { name: 'Duracell', logo: '/images/logo_duracell.png', url: 'https://duracell.com', alt: 'Duracell company logo' },
+    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.jpg', url: 'https://toyotaconnected.com', alt: 'Toyota Connected company logo' },
+    { name: 'Eaglestone Inc', logo: '/images/logo_eaglestone.webp', url: 'https://eaglestoneinc.com', alt: 'Eaglestone Inc company logo' },
+    { name: 'Waymo', logo: '/images/logo_waymo.png', url: 'https://waymo.com', alt: 'Waymo company logo' },
   ];
 
   return (
@@ -32,7 +32,7 @@ export const AlumniCompaniesSection = () => {
                 alt={`${company.name} logo`}
                 width={100}
                 height={50}
-                className="object-contain"
+                className="object-contain filter grayscale"
               />
             </a>
           ))}
