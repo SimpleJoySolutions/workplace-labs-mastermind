@@ -28,6 +28,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { PublicationLogosComponent } from './publication-logos';
+import { AlumniCompaniesSection } from './alumni-companies-section';
 
 export const HomeBody = () => {
   return (
@@ -426,7 +427,7 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-        
+        <AlumniCompaniesSection />
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
