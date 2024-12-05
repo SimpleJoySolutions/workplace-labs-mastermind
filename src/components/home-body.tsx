@@ -29,6 +29,7 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import { PublicationLogosComponent } from './publication-logos';
 import { AlumniCompaniesSection } from './alumni-companies-section';
+import { SocialProofSection } from './social-proof-section';
 
 export const HomeBody = () => {
   return (
@@ -433,6 +434,7 @@ export const HomeBody = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <AlumniCompaniesSection />
+          <SocialProofSection />
         </motion.section>
         <motion.section 
           initial={{ opacity: 0 }}
