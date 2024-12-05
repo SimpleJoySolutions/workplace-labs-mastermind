@@ -2,21 +2,21 @@ import Image from 'next/image';
 
 export const AlumniCompaniesSection = () => {
   const companies = [
-    { name: 'Google', logo: '/logos/google.png', url: 'https://google.com' },
-    { name: 'Duracell', logo: '/logos/duracell.png', url: 'https://duracell.com' },
-    { name: 'Toyota Connected', logo: '/logos/toyota-connected.png', url: 'https://toyotaconnected.com' },
-    { name: 'Eaglestone Inc', logo: '/logos/eaglestoneinc.png', url: 'https://eaglestoneinc.com' },
-    { name: 'Waymo', logo: '/logos/waymo.png', url: 'https://waymo.com' },
+    { name: 'Google', logo: '/images/logo_google.svg', url: 'https://google.com' },
+    { name: 'Duracell', logo: '/images/logo_duracell.png', url: 'https://duracell.com' },
+    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.jpg', url: 'https://toyotaconnected.com' },
+    { name: 'Eaglestone Inc', logo: '/images/logo_eaglestone.webp', url: 'https://eaglestoneinc.com' },
+    { name: 'Waymo', logo: '/images/logo_waymo.png', url: 'https://waymo.com' },
   ];
 
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         <h2 className="text-3xl font-bold text-gray-800">
-          Where Our Alumni Work
+          AI for HR Mastermind Network
         </h2>
         <p className="mt-4 text-gray-600">
-          Our alumni have made an impact in some of the world's leading companies.
+          Our alumni and members come from leading companies including:
         </p>
         <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
           {companies.map((company) => (
@@ -39,7 +39,7 @@ export const AlumniCompaniesSection = () => {
         </div>
         <div className="mt-10">
           <a
-            href="/apply"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
             className="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
           >
             Join Them Today
