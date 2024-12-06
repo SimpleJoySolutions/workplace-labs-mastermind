@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export const AlumniCompaniesSection = () => {
   const companies = [
-    { name: 'Google', logo: '/images/logo_google.svg', url: 'https://google.com', alt: 'Google company logo' },
-    { name: 'Duracell', logo: '/images/logo_duracell.png', url: 'https://duracell.com', alt: 'Duracell company logo' },
-    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.jpg', url: 'https://toyotaconnected.com', alt: 'Toyota Connected company logo' },
+    { name: 'Google', logo: '/images/logo_google.webp', url: 'https://google.com', alt: 'Google company logo' },
+    { name: 'Duracell', logo: '/images/logo_duracell.webp', url: 'https://duracell.com', alt: 'Duracell company logo' },
+    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.webp', url: 'https://toyotaconnected.com', alt: 'Toyota Connected company logo' },
     { name: 'Eaglestone Inc', logo: '/images/logo_eaglestone.webp', url: 'https://eaglestoneinc.com', alt: 'Eaglestone Inc company logo' },
-    { name: 'Waymo', logo: '/images/logo_waymo.png', url: 'https://waymo.com', alt: 'Waymo company logo' },
+    { name: 'Waymo', logo: '/images/logo_waymo.webp', url: 'https://waymo.com', alt: 'Waymo company logo' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export const AlumniCompaniesSection = () => {
               <Image
                 src={company.logo}
                 alt={`${company.name} logo`}
-                width={100}
+                width={130}
                 height={50}
                 className="object-contain filter grayscale"
               />
