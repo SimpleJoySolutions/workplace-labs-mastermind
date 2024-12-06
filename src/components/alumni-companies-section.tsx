@@ -45,6 +45,11 @@ export const AlumniCompaniesSection = () => {
             Join Them Today
           </a>
         </div>
+        
+        <p className="mt-8 text-xs text-gray-500 italic">
+          The companies listed above represent organizations where our alumni work or have worked. 
+          Their logos are used for identification purposes only and do not imply endorsement of our services.
+        </p>
       </div>
     </section>
   );
