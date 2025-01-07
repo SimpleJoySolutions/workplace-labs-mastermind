@@ -4,9 +4,9 @@ import Link from 'next/link';
 export const Header = () => {
   return (
     <header className="px-4 lg:px-6 h-24 flex items-center border-b border-solid border-border bg-gray-50">
-      <Link href="https://www.workplacelabs.io" className="flex items-center justify-center" prefetch={false}>
+      <Link href="/" className="flex items-center justify-center" prefetch={false}>
         <Image 
-          src="/images/logo-wide.webp" 
+          src="/images/ai-for-hr-logo.webp" 
           alt="AI Mastermind" 
           width={100} 
           height={100} 
