@@ -29,6 +29,7 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import { PublicationLogosComponent } from './publication-logos';
 import { AlumniCompaniesSection } from './alumni-companies-section';
+import { AboutUsSection } from './about-us-section';
 
 export const HomeBody = () => {
   return (
@@ -135,8 +136,19 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="container-class py-0"
+        >
+          <div className="section-inner">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <AboutUsSection />
+            </div>
+          </div>
+        </motion.section>
        
-        
         <motion.section 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
