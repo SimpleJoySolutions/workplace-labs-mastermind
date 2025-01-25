@@ -5,13 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,9 +29,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-### Links to ChatGPT
-https://chatgpt.com/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
-https://claude.ai/new/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
+### How to Link to ChatGPT and Claude with prompt baked in
 
+ChatGPT: https://chatgpt.com/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
+
+Claude: https://claude.ai/new/?q=what%20are%20the%20best%20ways%20to%20learn%20about%20ai%20and%20how%20to%20get%20started%20with%20it
+
+## Project V0 Themes
 Theme v2: https://v0.dev/themes/a7Hcx6prc8V
 Theme v3: https://v0.dev/themes/Kq598nFExXr
