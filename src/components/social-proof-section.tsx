@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type Testimonial = {
   name: string;
@@ -11,25 +11,20 @@ type Testimonial = {
 export const SocialProofSection = () => {
   const testimonials: Testimonial[] = [
     {
-      name: 'Jane Doe',
-      title: 'Senior Data Scientist',
-      company: 'Google',
-      photo: '/images/jonathan-square.webp',
-      quote: 'Joining the mastermind was one of the best decisions of my career. The insights I gained have been invaluable.',
+      name: "Vince Carbone",
+      title: "HR Manager",
+      company: "Eaglestone Equipment",
+      photo: "/images/vince-square.jpg",
+      quote:
+        "I am so glad that I stepped out of my comfort zone to participate, I look forward to being a part of the ongoing network for continued learning.",
     },
     {
-      name: 'John Smith',
-      title: 'Software Engineer',
-      company: 'Toyota Connected',
-      photo: '/images/jonathan-square.webp',
-      quote: 'This community has helped me grow exponentially, both personally and professionally.',
-    },
-    {
-      name: 'Emily Brown',
-      title: 'AI Researcher',
-      company: 'Waymo',
-      photo: '/images/jonathan-square.webp',
-      quote: "The mentorship and resources here are unmatched. I wouldn't be where I am today without this mastermind.",
+      name: "Montarious Usher",
+      title: "Director of HR Effectiveness",
+      company: "Duracell Inc.",
+      photo: "/images/montarious-square.jpg",
+      quote:
+        "Last year, I took a leap and joined the very first cohort of the AI for HR Mastermind course, and it was a great experience!",
     },
   ];
 
@@ -69,4 +64,4 @@ export const SocialProofSection = () => {
       </div>
     </section>
   );
-}; 
+};

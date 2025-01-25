@@ -1,12 +1,37 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export const AlumniCompaniesSection = () => {
   const companies = [
-    { name: 'Google', logo: '/images/logo_google.webp', url: 'https://google.com', alt: 'Google company logo' },
-    { name: 'Duracell', logo: '/images/logo_duracell.webp', url: 'https://duracell.com', alt: 'Duracell company logo' },
-    { name: 'Toyota Connected', logo: '/images/logo_toyota_connected.webp', url: 'https://toyotaconnected.com', alt: 'Toyota Connected company logo' },
-    { name: 'Eaglestone Inc', logo: '/images/logo_eaglestone.webp', url: 'https://eaglestoneinc.com', alt: 'Eaglestone Inc company logo' },
-    { name: 'Waymo', logo: '/images/logo_waymo.webp', url: 'https://waymo.com', alt: 'Waymo company logo' },
+    {
+      name: "Google",
+      logo: "/images/logo_google.webp",
+      url: "https://google.com",
+      alt: "Google company logo",
+    },
+    {
+      name: "Duracell",
+      logo: "/images/logo_duracell.webp",
+      url: "https://duracell.com",
+      alt: "Duracell company logo",
+    },
+    {
+      name: "Toyota Connected",
+      logo: "/images/logo_toyota_connected.webp",
+      url: "https://toyotaconnected.com",
+      alt: "Toyota Connected company logo",
+    },
+    {
+      name: "Eaglestone Inc",
+      logo: "/images/logo_eaglestone.webp",
+      url: "https://eaglestoneinc.com",
+      alt: "Eaglestone Inc company logo",
+    },
+    {
+      name: "Waymo",
+      logo: "/images/logo_waymo.webp",
+      url: "https://waymo.com",
+      alt: "Waymo company logo",
+    },
   ];
 
   return (
@@ -45,12 +70,12 @@ export const AlumniCompaniesSection = () => {
             Join Them Today
           </a>
         </div>
-        
-        <p className="mt-8 text-xs text-gray-500 italic">
+
+        {/* <p className="mt-8 text-xs text-gray-500 italic">
           The companies listed above represent organizations where our alumni work or have worked. 
           Their logos are used for identification purposes only and do not imply endorsement of our services.
-        </p>
+        </p> */}
       </div>
     </section>
   );
-}; 
+};
