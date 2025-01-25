@@ -35,6 +35,7 @@ import { UseCasesSection } from "./use-cases-section";
 import { AIRealitySection } from "./ai-reality-section";
 import { AITransformationsSection } from "./ai-transformations-section";
 import { OurApproachSection } from "./our-approach-section";
+import { WhatYouLearnSection } from "./what-you-learn-section";
 
 export const HomeBody = () => {
   return (
@@ -122,6 +123,15 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="container-class"
+        >
+          <WhatYouLearnSection />
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="container-class py-0"
         >
           <div className="section-inner">
@@ -202,29 +212,41 @@ export const HomeBody = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Who should join the AI for HR mastermind?
+                  This Mastermind is Right for You If
                 </h2>
                 <div className="flex flex-col gap-4">
                   <div>
                     <h3 className="text-xl font-bold">
-                      Leaders who want to start or streamline their AI journey
+                      You Have a Vision for Better HR, But Limited Bandwidth
                     </h3>
                     <p className="section-paragraph">
-                      Are you looking for ways to get started with AI? Or maybe
-                      you're experimenting with AI tools and need better ways to
-                      test your progress and get buy-in? If you're starting or
-                      upskilling in AI, this mastermind group is for you.
+                      You have a long list of 'one day' HR projects, but
+                      administrative tasks keep getting in the way. You've found
+                      plenty of areas to improve people operations in your
+                      organization, there just aren't enough hours in the day.
+                      You're curious how AI can help.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">
-                      Leaders who want to network with other early adopters
+                      You're Ready to Move Beyond Basic AI Use Cases
                     </h3>
                     <p className="section-paragraph">
-                      Want to learn from what others are doing? Are you looking
-                      for benchmarks and feedback on what you've tried so far?
-                      You'll have an opportunity to network and trade notes with
-                      other amazing HR leaders who are passionate about AI.
+                      You've experimented with ChatGPT and other AI tools, but
+                      you know there's more potential. You want a structured
+                      approach to implement AI effectively across your HR
+                      functions and get measurable results.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">
+                      You Need a Practical Implementation Roadmap
+                    </h3>
+                    <p className="section-paragraph">
+                      You're tired of theoretical AI discussions and vendor
+                      pitches. You want hands-on guidance, real examples, and a
+                      clear framework for implementing AI in ways that your
+                      leadership and teams will embrace.
                     </p>
                   </div>
                 </div>
@@ -448,8 +470,8 @@ export const HomeBody = () => {
                 Our Mission
               </h2>
               <p className="max-w-[900px] text-xl md:text-2xl">
-                To cut through the noise and teach AI skills that help HR
-                leaders create more engaged, equitable, and evidence-based
+                Cut through the hype and teach AI skills that help HR
+                professionals create more effective, engaged, and equitable
                 workplaces.
               </p>
             </div>
@@ -470,12 +492,8 @@ export const HomeBody = () => {
             >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Apply to Join The AI for HR Mastermind
+                  Ready to become a leader in AI-enabled HR?
                 </h2>
-                <p className="section-paragraph">
-                  Ready to become an AI-empowered HR leader and the go-to
-                  company expert?
-                </p>
                 <p className="section-paragraph">
                   Each cohort has limited space, so apply now!
                 </p>
