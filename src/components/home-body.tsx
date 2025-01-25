@@ -272,8 +272,7 @@ export const HomeBody = () => {
                   AI for HR Mastermind
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed">
-                  our comprehensive 4-week
-                  program
+                  The four-week curriculum
                 </p>
               </div>
             </div>
@@ -295,15 +294,14 @@ export const HomeBody = () => {
                   <path d="M21 3v5h-5" />
                 </svg>
                 <h3 className="text-2xl font-bold mb-3">
-                  Week 1: AI Readiness
+                  Week 1: Assess AI Readiness
                 </h3>
                 <h4 className="text-xl mb-3">
                   The 6 driving forces behind successful (and unsuccessful) AI
-                  use cases
+                  deployments
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Assess your organization's AI readiness and identify
-                  focus areas for long-term success.
+                  Assess your organization's AI readiness and learn from real HR case studies of successful (and failed) AI implementations.
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -323,14 +321,13 @@ export const HomeBody = () => {
                   <path d="M22 2 11 13" />
                 </svg>
                 <h3 className="text-2xl font-bold mb-3">
-                  Week 2: Select Use Case
+                  Week 2: Select a Use Case
                 </h3>
                 <h4 className="text-xl mb-3">
                   5 tips for choosing an AI use case that offers real results
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Navigate common concerns and ensure your initiatives deliver
-                  measurable business outcomes.
+                  Learn the secrets to picking the right tasks to automate or augment with AI
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -349,13 +346,12 @@ export const HomeBody = () => {
                   <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
                   <path d="M7 7h.01" />
                 </svg>
-                <h3 className="text-2xl font-bold mb-3">Week 3: Prototype</h3>
+                <h3 className="text-2xl font-bold mb-3">Week 3: Build a Prototype</h3>
                 <h4 className="text-xl mb-3">
                   3 steps to building a proof-of-concept
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Learn to quickly build prototypes that demonstrate the value
-                  of your AI initiatives.
+                  Quickly build prototypes that demonstrate the value of your AI initiatives.
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -376,13 +372,12 @@ export const HomeBody = () => {
                   <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
                   <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
                 </svg>
-                <h3 className="text-2xl font-bold mb-3">Week 4: Scale</h3>
+                <h3 className="text-2xl font-bold mb-3">Week 4: Prepare to Scale</h3>
                 <h4 className="text-xl mb-3">
                   How to scale your proof-of-concept
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Create a comprehensive action plan to scale your AI
-                  initiatives and deliver sustainable value.
+                  Draft a real-life action plan to scale your AI initiatives and deliver sustainable value.
                 </p>
               </div>
             </div>
