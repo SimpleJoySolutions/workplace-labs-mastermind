@@ -50,18 +50,19 @@ export const HomeBody = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex flex-col justify-center space-y-4"
               >
-                <div className="">
-                  <h4 className="text-5xl font-bold py-6">
-                    The Essential AI for HR Mastermind
+                <div className="max-w-[700px]">
+                  <h4 className="text-4xl lg:text-5xl font-bold py-6">
+                    The Essential Mastermind for AI-enabled HR
                   </h4>
-                  <h4 className="text-3xl font-bold">
-                    From Concept to Action Plan in 4 Weeks
+                  <h4 className="text-2xl lg:text-3xl font-bold">
+                    Less Admin, More Impact: AI Skills for Modern HR
                   </h4>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl py-4">
-                    Our invite-only, 4-week mastermind training program and
-                    community helps HR and People leaders demystify Gen AI, spot
-                    use cases aligned with business goals, and turn their teams
-                    into the go-to company experts on AI.
+                  <p className="text-lg md:text-xl text-muted-foreground py-4">
+                    Become your organization's go-to expert for AI people
+                    solutions.
+                  </p>
+                  <p className="text-lg md:text-xl text-muted-foreground">
+                    Our next cohort kicks off February 13th.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -74,7 +75,7 @@ export const HomeBody = () => {
                       className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-secondary px-10 text-base font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
-                      Join the Mastermind
+                      Apply Today
                     </Link>
                   </motion.div>
                 </div>
