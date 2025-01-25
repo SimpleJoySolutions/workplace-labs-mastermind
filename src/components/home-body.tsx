@@ -23,19 +23,20 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-'use client'
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from 'framer-motion';
-import { PublicationLogosComponent } from './publication-logos';
-import { AlumniCompaniesSection } from './alumni-companies-section';
-import { AboutUsSection } from './about-us-section';
-import { UseCasesSection } from './use-cases-section';
+import { motion } from "framer-motion";
+import { PublicationLogosComponent } from "./publication-logos";
+import { AlumniCompaniesSection } from "./alumni-companies-section";
+import { SocialProofSection } from "./social-proof-section";
+import { AboutUsSection } from "./about-us-section";
+import { UseCasesSection } from "./use-cases-section";
 export const HomeBody = () => {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -43,7 +44,7 @@ export const HomeBody = () => {
         >
           <div className="section-inner">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -62,7 +63,7 @@ export const HomeBody = () => {
                     use cases aligned with business goals, and turn their teams
                     into the go-to company experts on AI.
                   </p>
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
@@ -92,10 +93,10 @@ export const HomeBody = () => {
                 />
               </motion.div>
             </div>
-        <PublicationLogosComponent />
+            <PublicationLogosComponent />
           </div>
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -108,11 +109,11 @@ export const HomeBody = () => {
                   Become your company's go-to leader on AI
                 </h2>
                 <p className="section-paragraph">
-                  Inside the AI in HR Mastermind, you'll get resources
-                  curated for HR leaders, interactive and hands-on group
-                  training sessions, reusable templates and frameworks, and
-                  networking opportunities with like-minded HR and People
-                  leaders from some of the best companies.
+                  Inside the AI in HR Mastermind, you'll get resources curated
+                  for HR leaders, interactive and hands-on group training
+                  sessions, reusable templates and frameworks, and networking
+                  opportunities with like-minded HR and People leaders from some
+                  of the best companies.
                 </p>
               </div>
             </div>
@@ -136,7 +137,7 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -160,8 +161,8 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-       
-        <motion.section 
+
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -185,8 +186,7 @@ export const HomeBody = () => {
                 <ul className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-left space-y-4">
                   <li>
                     <h3 className="text-xl font-bold">
-                      Come with employees saying, "I am afraid for my
-                      job."
+                      Come with employees saying, "I am afraid for my job."
                     </h3>
                     <p>
                       (We help you address the cultural element of a successful
@@ -217,7 +217,7 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -236,10 +236,9 @@ export const HomeBody = () => {
                     </h3>
                     <p className="section-paragraph">
                       Are you looking for ways to get started with AI? Or maybe
-                      you're experimenting with AI tools and need better
-                      ways to test your progress and get buy-in? If you're
-                      starting or upskilling in AI, this mastermind group is for
-                      you.
+                      you're experimenting with AI tools and need better ways to
+                      test your progress and get buy-in? If you're starting or
+                      upskilling in AI, this mastermind group is for you.
                     </p>
                   </div>
                   <div>
@@ -258,8 +257,8 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-       
-        <motion.section 
+
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -301,7 +300,8 @@ export const HomeBody = () => {
                   deployments
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Assess your organization's AI readiness and learn from real HR case studies of successful (and failed) AI implementations.
+                  Assess your organization's AI readiness and learn from real HR
+                  case studies of successful (and failed) AI implementations.
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -327,7 +327,8 @@ export const HomeBody = () => {
                   5 tips for choosing an AI use case that offers real results
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Learn the secrets to picking the right tasks to automate or augment with AI
+                  Learn the secrets to picking the right tasks to automate or
+                  augment with AI
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -346,12 +347,15 @@ export const HomeBody = () => {
                   <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
                   <path d="M7 7h.01" />
                 </svg>
-                <h3 className="text-2xl font-bold mb-3">Week 3: Build a Prototype</h3>
+                <h3 className="text-2xl font-bold mb-3">
+                  Week 3: Build a Prototype
+                </h3>
                 <h4 className="text-xl mb-3">
                   3 steps to building a proof-of-concept
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Quickly build prototypes that demonstrate the value of your AI initiatives.
+                  Quickly build prototypes that demonstrate the value of your AI
+                  initiatives.
                 </p>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
@@ -372,18 +376,21 @@ export const HomeBody = () => {
                   <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
                   <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
                 </svg>
-                <h3 className="text-2xl font-bold mb-3">Week 4: Prepare to Scale</h3>
+                <h3 className="text-2xl font-bold mb-3">
+                  Week 4: Prepare to Scale
+                </h3>
                 <h4 className="text-xl mb-3">
                   How to scale your proof-of-concept
                 </h4>
                 <p className="text-muted-foreground text-lg">
-                  Draft a real-life action plan to scale your AI initiatives and deliver sustainable value.
+                  Draft a real-life action plan to scale your AI initiatives and
+                  deliver sustainable value.
                 </p>
               </div>
             </div>
           </div>
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -452,8 +459,9 @@ export const HomeBody = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <AlumniCompaniesSection />
+          <SocialProofSection />
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -472,14 +480,14 @@ export const HomeBody = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="container-class"
         >
           <div className="section-inner">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -490,13 +498,13 @@ export const HomeBody = () => {
                   Apply to Join The AI for HR Mastermind
                 </h2>
                 <p className="section-paragraph">
-                  Ready to become an AI-empowered HR leader and
-                  the go-to company expert?
+                  Ready to become an AI-empowered HR leader and the go-to
+                  company expert?
                 </p>
                 <p className="section-paragraph">
                   Each cohort has limited space, so apply now!
                 </p>
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
