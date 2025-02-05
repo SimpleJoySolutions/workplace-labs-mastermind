@@ -24,14 +24,15 @@ export const JobDescriptionKitPage = () => {
               >
                 <div className="max-w-[700px]">
                   <h1 className="text-4xl lg:text-5xl font-bold py-6">
-                    Research-Backed Job Description Builder AI Kit
+                    AI Job Description Builder Workflow
                   </h1>
                   <h2 className="text-2xl lg:text-3xl font-bold">
-                    Create High-Quality Job Descriptions That Attract Top Talent
+                    A Research-Backed System for Creating Job Descriptions That
+                    Convert
                   </h2>
                   <p className="text-lg md:text-xl text-muted-foreground py-4">
-                    4 Custom GPTs + Training Course to Help You Write Better Job
-                    Descriptions
+                    Complete Workflow with 4 Custom GPTs + Training to Transform
+                    Your Hiring Process
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -100,13 +101,13 @@ export const JobDescriptionKitPage = () => {
           <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                What's Included in the Kit
+                What's Included in the Workflow
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
                 <h3 className="text-2xl font-bold mb-4">
-                  4 Research-Based Custom GPTs
+                  4 Custom GPTs - Your AI Workflow Team
                 </h3>
                 <ul className="text-left space-y-4 text-lg">
                   <li className="flex items-start">
@@ -128,23 +129,25 @@ export const JobDescriptionKitPage = () => {
                 </ul>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
-                <h3 className="text-2xl font-bold mb-4">Training Course</h3>
+                <h3 className="text-2xl font-bold mb-4">
+                  Step-by-Step Training
+                </h3>
                 <ul className="text-left space-y-4 text-lg">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Learn how the GPTs were built</span>
+                    <span>Master the complete workflow</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Customize them for your needs</span>
+                    <span>Adapt the process to your needs</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Build your own Custom GPTs</span>
+                    <span>Create your own AI workflows</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Best practices and examples</span>
+                    <span>Research-backed templates & examples</span>
                   </li>
                 </ul>
               </div>
@@ -166,8 +169,8 @@ export const JobDescriptionKitPage = () => {
                   Get Started Today
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] mx-auto mb-8">
-                  Start creating better job descriptions that attract the right
-                  candidates
+                  Start using our proven workflow to create job descriptions
+                  that attract qualified candidates
                 </p>
                 <div className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
                   <h3 className="text-3xl font-bold mb-4">$45</h3>

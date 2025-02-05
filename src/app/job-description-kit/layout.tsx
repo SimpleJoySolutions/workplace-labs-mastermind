@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Job Description Builder AI Kit | AI for HR Mastermind",
+  title: "AI Job Description Builder Workflow | AI for HR Mastermind",
   description:
-    "Create high-quality job descriptions that attract top talent with our research-backed Custom GPTs and training course.",
+    "Transform your hiring process with our research-backed AI workflow for creating job descriptions that convert. Includes 4 Custom GPTs and step-by-step training.",
 };
 
 export default function JobDescriptionKitLayout({
