@@ -1,9 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Image } from "@/components/ui/image";
 
-export const JobDescriptionKitPage = () => {
+export const JobDescriptionKit = () => {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -54,8 +53,8 @@ export const JobDescriptionKitPage = () => {
               >
                 <Image
                   src="/images/job-description.png"
-                  width="550"
-                  height="550"
+                  width={550}
+                  height={550}
                   alt="Job Description Builder"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
                 />
@@ -178,7 +177,7 @@ export const JobDescriptionKitPage = () => {
                   Start creating job descriptions that truly represent your
                   company and attract the right talent
                 </p>
-                <div className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
+                <div className="bg-card p-8 rounded-lg shadow-lg max-w-md mx-auto">
                   <h3 className="text-3xl font-bold mb-4">$45</h3>
                   <p className="text-muted-foreground mb-6">
                     One-time payment, instant access
@@ -244,4 +243,4 @@ export const JobDescriptionKitPage = () => {
   );
 };
 
-export default JobDescriptionKitPage;
+export default JobDescriptionKit;

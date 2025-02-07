@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --font-heading: 'Manrope', system-ui, sans-serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
     --destructive-foreground: 0 0% 100%;
     --secondary-foreground: 30 100% 10%;
     --popover-foreground: 210 15% 20%;
@@ -50,10 +52,10 @@
   .container-class {
     @apply w-full py-12 md:py-24 lg:py-32;
   }
-  .section-inner{
+  .section-inner {
     @apply container mx-auto max-w-7xl px-4 md:px-6;
   }
   .section-paragraph {
     @apply max-w-[800px] mx-auto text-center text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed;
   }
-}
+} 

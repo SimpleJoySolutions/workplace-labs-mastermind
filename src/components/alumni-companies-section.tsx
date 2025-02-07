@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 
 export const AlumniCompaniesSection = () => {
   const companies = [
@@ -54,10 +54,10 @@ export const AlumniCompaniesSection = () => {
             >
               <Image
                 src={company.logo}
-                alt={`${company.name} logo`}
+                alt={company.alt}
                 width={130}
                 height={50}
-                className="object-contain filter grayscale"
+                className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </a>
           ))}

@@ -24,9 +24,9 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 "use client";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Image } from "@/components/ui/image";
 import { PublicationLogosComponent } from "./publication-logos";
 import { AlumniCompaniesSection } from "./alumni-companies-section";
 import { SocialProofSection } from "./social-proof-section";
@@ -75,13 +75,12 @@ export const HomeBody = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex flex-col gap-2 min-[400px]:flex-row"
                   >
-                    <Link
+                    <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
                       className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-secondary px-10 text-base font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      prefetch={false}
                     >
                       Apply Today
-                    </Link>
+                    </a>
                   </motion.div>
                 </div>
               </motion.div>
@@ -92,8 +91,8 @@ export const HomeBody = () => {
               >
                 <Image
                   src="/images/man-working.png"
-                  width="550"
-                  height="550"
+                  width={550}
+                  height={550}
                   alt="Hero"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
                 />
@@ -144,7 +143,7 @@ export const HomeBody = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-muted container-class border-y-4 "
+          className="bg-muted container-class border-y-4"
         >
           <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -442,8 +441,8 @@ export const HomeBody = () => {
               </div>
               <Image
                 src="/images/whiteboarding.png"
-                width="550"
-                height="310"
+                width={550}
+                height={310}
                 alt="Image"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
@@ -503,13 +502,12 @@ export const HomeBody = () => {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   className="flex justify-center"
                 >
-                  <Link
+                  <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeysTaenp0vmB4qtWRXItMwY-m1_pmTrmalKPWZjt6P5ymUTw/viewform?usp=sf_link"
                     className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-secondary px-10 text-base font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
                   >
                     Apply Now
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </motion.div>

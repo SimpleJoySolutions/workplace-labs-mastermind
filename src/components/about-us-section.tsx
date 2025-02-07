@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { Image } from "@/components/ui/image";
 
 interface FounderProfileProps {
   name: string;
   role: string;
   bio: (
     | string
-    | { type: 'image'; src: string; alt: string; width: number; height: number }
+    | { type: "image"; src: string; alt: string; width: number; height: number }
   )[];
   imageSrc: string;
   linkedInUrl: string;
@@ -56,7 +56,7 @@ const FounderProfile: React.FC<FounderProfileProps> = ({
     </div>
     <div className="md:w-2/3 p-8 bg-muted">
       {bio.map((item, index) =>
-        typeof item === 'string' ? (
+        typeof item === "string" ? (
           <motion.p
             key={index}
             initial={{ opacity: 0, x: 20 }}
@@ -128,9 +128,9 @@ export const AboutUsSection = () => {
                 "Hi, I'm Jonathan. I've always been fascinated by why some software is intuitive and enjoyable to use, while other programs seem designed to make life miserable. I often found myself mentally redesigning solutions, wondering why they weren't created that way in the first place.",
                 "This fascination led me to study countless stories of failed software solutions. What I discovered is that most issues aren't technical—they stem from various barriers between what customers truly need and what's actually created. It might seem odd to mention this here, but I believe it illustrates not only the challenges in software development but also in creating AI solutions that genuinely meet end users' needs.",
                 {
-                  type: 'image',
-                  src: '/images/software-dev.webp',
-                  alt: 'coding illustration',
+                  type: "image",
+                  src: "/images/software-dev.webp",
+                  alt: "coding illustration",
                   width: 400,
                   height: 300,
                 },
