@@ -24,7 +24,6 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 "use client";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Image } from "@/components/ui/image";
 import { PublicationLogosComponent } from "./publication-logos";

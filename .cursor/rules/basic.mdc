@@ -1,0 +1,19 @@
+---
+description: basic rules for project
+globs: 
+---
+
+# Your rule content
+
+## React
+- use new features available in React 18
+
+## Typescript
+- follow best practices
+- use strong typing
+- avoid 'any' or 'unknown'
+
+## UI
+- Use shadcn, tailwindcss
+- never update components/ui dir
+
