@@ -24,15 +24,14 @@ export const JobDescriptionKitPage = () => {
               >
                 <div className="max-w-[700px]">
                   <h1 className="text-4xl lg:text-5xl font-bold py-6">
-                    AI Job Description Builder Workflow
+                    AI Job Description Quickstart Guide
                   </h1>
                   <h2 className="text-2xl lg:text-3xl font-bold">
-                    A Research-Backed System for Creating Job Descriptions That
-                    Convert
+                    A Complete Tutorial to Build Your Custom Job Description GPT
                   </h2>
                   <p className="text-lg md:text-xl text-muted-foreground py-4">
-                    Complete Workflow with 4 Custom GPTs + Training to Transform
-                    Your Hiring Process
+                    Write Job Descriptions Tailored to Your Business Using 4
+                    Ready-Made GPTs + Build Your Own
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -76,13 +75,14 @@ export const JobDescriptionKitPage = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                  Why Job Descriptions Matter
+                  Why Custom Job Descriptions Matter
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] mx-auto">
-                  High-quality job descriptions help attract candidates aligned
-                  with your company's mission, values and culture. They help
-                  teams stay rooted in skills-based hiring decisions by focusing
-                  on the skills that predict success in the role.
+                  Generic job descriptions fail to attract the right candidates.
+                  Research shows that job descriptions aligned with your
+                  company's unique mission, values, and culture lead to better
+                  hiring outcomes. Our guide helps you create descriptions that
+                  reflect your specific needs.
                 </p>
                 <p className="text-sm text-muted-foreground italic mt-2">
                   - Journal of Applied Psychology
@@ -101,53 +101,60 @@ export const JobDescriptionKitPage = () => {
           <div className="section-inner">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-                What's Included in the Workflow
+                What's In The Guide
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
                 <h3 className="text-2xl font-bold mb-4">
-                  4 Custom GPTs - Your AI Workflow Team
+                  4 Ready-Made GPTs to Get Started
                 </h3>
                 <ul className="text-left space-y-4 text-lg">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Job Description Revision GPT</span>
+                    <span>
+                      Job Description Revision GPT - Polish Your Drafts
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Feasible Work Analysis Assistant</span>
+                    <span>
+                      Feasible Work Analysis Assistant - Define Real
+                      Requirements
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Company Overview Assistant</span>
+                    <span>
+                      Company Overview Assistant - Capture Your Culture
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Job Description Assistant</span>
+                    <span>Job Description Assistant - Put It All Together</span>
                   </li>
                 </ul>
               </div>
               <div className="border-2 border-muted rounded-lg p-8 flex flex-col items-center">
                 <h3 className="text-2xl font-bold mb-4">
-                  Step-by-Step Training
+                  Build Your Own GPT Tutorial
                 </h3>
                 <ul className="text-left space-y-4 text-lg">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Master the complete workflow</span>
+                    <span>See how our GPTs are built step-by-step</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Adapt the process to your needs</span>
+                    <span>Customize prompts for your industry</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Create your own AI workflows</span>
+                    <span>Create your own custom GPT assistants</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    <span>Research-backed templates & examples</span>
+                    <span>Research-backed prompts & examples</span>
                   </li>
                 </ul>
               </div>
@@ -169,8 +176,8 @@ export const JobDescriptionKitPage = () => {
                   Get Started Today
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] mx-auto mb-8">
-                  Start using our proven workflow to create job descriptions
-                  that attract qualified candidates
+                  Start creating job descriptions that truly represent your
+                  company and attract the right talent
                 </p>
                 <div className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
                   <h3 className="text-3xl font-bold mb-4">$45</h3>
